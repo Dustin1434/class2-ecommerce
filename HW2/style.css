@@ -1,0 +1,202 @@
+/* Calvin Klein Minimalist E-commerce Styles */
+
+/* ------------------------------------------- */
+/* Global Styles & Variables                   */
+/* ------------------------------------------- */
+:root {
+    --bg: #00ff22;
+    --card-bg: #fafafa;
+    --text: #222;
+    --muted: #888;
+    --accent: #111;
+    --shadow: 0 2px 16px rgba(0,0,0,0.04);
+    --font-main: 'Montserrat', 'Roboto', Arial, sans-serif;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------------------------- */
+/* Layout & Header                             */
+/* ------------------------------------------- */
+.layout {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: var(--bg);
+    box-shadow: var(--shadow);
+    border-radius: 12px;
+    padding: 0 32px 32px 32px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0 16px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--accent);
+    text-transform: uppercase;
+    font-family: var(--font-main);
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: var(--muted);
+    margin-top: -18px;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    transition: color 0.2s;
+}
+
+.main-nav a:hover {
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+}
+
+.cart-icon p {
+    font-size: 1.2rem;
+    color: var(--accent);
+    background: #f5f5f5;
+    padding: 8px 18px;
+    border-radius: 24px;
+    border: 1px solid #eee;
+    transition: background 0.2s;
+}
+
+.cart-icon p:hover {
+    background: #e0e0e0;
+}
+
+/* ------------------------------------------- */
+/* Section Titles & Products                   */
+/* ------------------------------------------- */
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 40px 0 10px 0;
+    letter-spacing: 1.5px;
+    color: var(--accent);
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    margin-top: 24px;
+}
+
+.product-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    padding: 18px;
+    text-align: center;
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.product-card:hover {
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    transform: translateY(-4px) scale(1.03);
+}
+
+.product-card img {
+    width: 100%;
+    max-width: 180px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    background: #fff;
+}
+
+.product-info h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 0 0 6px 0;
+    color: var(--text);
+    letter-spacing: 1px;
+}
+
+.product-info p {
+    font-size: 1.05rem;
+    color: #444;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* Add to Cart Button */
+.add-cart-btn {
+    margin-top: 12px;
+    padding: 8px 20px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+.add-cart-btn:hover {
+    background: #333;
+    transform: scale(1.05);
+}
+
+/* ------------------------------------------- */
+/* Footer                                      */
+/* ------------------------------------------- */
+.footer {
+    text-align: center;
+    color: #aaa;
+    font-size: 0.95rem;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid #eee;
+}
+
+/* ------------------------------------------- */
+/* Responsive Design                           */
+/* ------------------------------------------- */
+@media (max-width: 900px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+    .layout {
+        padding: 0 8px 24px 8px;
+    }
+    .header {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+}
