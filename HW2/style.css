@@ -1,16 +1,13 @@
-/* Calvin Klein Minimalist E-commerce Styles */
-
-/* ------------------------------------------- */
-/* Global Styles & Variables                   */
-/* ------------------------------------------- */
 :root {
-    --bg: #00ff22;
-    --card-bg: #fafafa;
-    --text: #222;
-    --muted: #888;
-    --accent: #111;
-    --shadow: 0 2px 16px rgba(0,0,0,0.04);
-    --font-main: 'Montserrat', 'Roboto', Arial, sans-serif;
+    --bg: #cd6e6ee4;
+    --card-bg: #ffbaba;
+    --text: #000000;
+    --muted: #fff718;
+    --accent: #070707;
+    --shadow: 0 2px 16px rgba(0, 0, 0, 0.04);
+    --font-main: 'Times New Roman', Times, serif;
+
+
 }
 
 body {
@@ -21,9 +18,6 @@ body {
     padding: 0;
 }
 
-/* ------------------------------------------- */
-/* Layout & Header                             */
-/* ------------------------------------------- */
 .layout {
     max-width: 1100px;
     margin: 0 auto;
@@ -83,22 +77,19 @@ body {
 .cart-icon p {
     font-size: 1.2rem;
     color: var(--accent);
-    background: #f5f5f5;
-    padding: 8px 18px;
+    background: #eaabab;
+    padding: 11px 20px;
     border-radius: 24px;
-    border: 1px solid #eee;
+    border: 2px solid #f40000;
     transition: background 0.2s;
 }
 
 .cart-icon p:hover {
-    background: #e0e0e0;
+    background: #ff0b0b;
 }
 
-/* ------------------------------------------- */
-/* Section Titles & Products                   */
-/* ------------------------------------------- */
 .section-title {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 700;
     margin: 40px 0 10px 0;
     letter-spacing: 1.5px;
@@ -131,11 +122,11 @@ body {
     max-width: 180px;
     border-radius: 8px;
     margin-bottom: 18px;
-    background: #fff;
+    background: #d7d7d7;
 }
 
 .product-info h3 {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     font-weight: 600;
     margin: 0 0 6px 0;
     color: var(--text);
@@ -144,17 +135,16 @@ body {
 
 .product-info p {
     font-size: 1.05rem;
-    color: #444;
+    color: #ff0000;
     margin: 0;
     font-weight: 500;
 }
 
-/* Add to Cart Button */
 .add-cart-btn {
     margin-top: 12px;
     padding: 8px 20px;
     background: var(--accent);
-    color: #fff;
+    color: #ff0000;
     border: none;
     border-radius: 20px;
     font-size: 1rem;
@@ -162,25 +152,21 @@ body {
     transition: background 0.2s, transform 0.2s;
 }
 .add-cart-btn:hover {
-    background: #333;
+    background: #ff0404;
     transform: scale(1.05);
 }
 
-/* ------------------------------------------- */
-/* Footer                                      */
-/* ------------------------------------------- */
+
 .footer {
     text-align: center;
     color: #aaa;
     font-size: 0.95rem;
     margin-top: 40px;
     padding-top: 24px;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #d54545;
 }
 
-/* ------------------------------------------- */
-/* Responsive Design                           */
-/* ------------------------------------------- */
+
 @media (max-width: 900px) {
     .products {
         grid-template-columns: repeat(2, 1fr);
